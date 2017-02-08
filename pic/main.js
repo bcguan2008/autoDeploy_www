@@ -24,7 +24,7 @@
 		initDrawImage();
 	});
 	touchEvent(canvas, listener);
-	document.body.addEventListener('touchmove', function(event){
+	document.body.querySelector('#test').addEventListener('touchmove', function(event){
 		event.preventDefault();
 	}, false);
 
