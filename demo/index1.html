@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="zepto.js"></script>
+</head>
+
+<body>
+  <div id="container_node"></div>
+
+  <script>
+    $.cutPhoto(
+        {
+            container         : "container_node",
+            browse_button     : "browseFile",
+            save_button       : "saveimg",
+            filters_background: "http://h5.ffan.com/zzq/h5/parkingCoupon/JYBS1xiaoshi/images/banner-offline.jpg"
+        },
+
+        function (cutPhotoCacheData, initStatus) {
+            var imgData   = cutPhotoCacheData();
+            debugger;
+            //todo
+        }
+    );
+</script>
+</body>
+
+</html>

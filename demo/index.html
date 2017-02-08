@@ -200,7 +200,6 @@
 
             this.canvas.addEventListener('touchmove', function(e) {
                 e.preventDefault();
-
                 if (e.targetTouches.length == 2) { //pinch
                     this.doZoom(this.gesturePinchZoom(e));
                 } else if (e.targetTouches.length == 1) {
